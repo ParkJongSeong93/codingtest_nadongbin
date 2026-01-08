@@ -6,6 +6,7 @@
 n, m = map(int, input().split())
 
 r, c , dir = map(int, input().split())
+# 방향 설정
 dirArray = [(-1,0),(0,1),(1,0),(0,-1)]
 
 # 이중 리스트 입력
