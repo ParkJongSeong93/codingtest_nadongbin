@@ -35,6 +35,8 @@ def  topology_sort():
         now = q.popleft()
         for i in graph[now]:
             indegree[i] -= 1
+            # 걸리는 시간 계산
+            # 가장 최대로 걸리는 선수 과목들을 계산해야 함
             result[i] = max(result[i], result[now] + time[i])
             if indegree[i] == 0:
                 q.append(i)
