@@ -24,6 +24,7 @@ for _ in range(m):
     x, y, z = map(int, input().split())
     edges.append((z, x, y))
 
+# 정렬을 통해 약간의 그리디 알고리즘 느낌
 edges.sort()
 total = 0
 
