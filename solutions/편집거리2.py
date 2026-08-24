@@ -4,7 +4,7 @@ def edit_dist(str1, str2):
     n = len(str1)
     m = len(str2)
 
-    dp = [[0 * (m+1) for _ in range(n+1)]]
+    dp = [[0] * (m+1) for _ in range(n+1)]
 
     for i in range(1, n+1):
         dp[i][0] = i
